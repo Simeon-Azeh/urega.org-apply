@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>uregaapply</title>
+    <link rel="icon" href="images/Asset 6.png" type="image/png">
+    <link rel="stylesheet" href="form.css">
+    
+</head>
+<body>
+    <form id="regForm" action="">
+
+       
+        
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab">
+          <h1 class="heading">Registeration</h1>
+        <label for="firstname">Firstname</label>
+          <p><input type="text" name="firstname" id="firstname" oninput="this.className = ''"></p>
+          <label for="lastname">Lastname</label>
+          <p><input type="text" name="lastname" id="lastname" oninput="this.className = ''"></p>
+          <label for="email">Email</label>
+          <p><input type="email" name="email" id="email"  oninput="this.className = ''"></p>
+          <label for="gender">Gender</label>
+          <p> <select name="gender" id="gender" oninput="this.className=''">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select></p>
+        <label for="dob">Date of birth</label>
+        <p><input type="date" name="dob" id="dob" oninput="this.className = ''"></p>
+        </div>
+        
+        <div class="tab">
+          <h1 class="heading">More about you</h1>
+          <label for="tel">Phone Number</label>
+            <p><input type="tel" name="tel" id="tel" placeholder="e.g. 652812028" oninput="this.className = ''"></p>
+            <label for="city">Where do you live? </label>
+            <p><select name="city" id="city" oninput="this.className = ''">
+              <option value="male">Ambam</option>
+              <option value="male">Abong Abang</option>
+              <option value="male">Akonolinga</option>
+              <option value="male">Ako</option>
+              <option value="male">Buea</option>
+              <option value="female">Bertoua</option>
+              <option value="male">Bamenda</option>
+              <option value="female">Banso</option>
+              <option value="male">Baffousam</option>
+              <option value="female">Bafut</option>
+              <option value="female">Bafang</option>
+              <option value="male">Banyu</option>
+              <option value="city">Bagangte</option>
+              <option value="male">Bafia</option>
+              <option value="male">Bangem</option>
+              <option value="female">Batouri</option>
+              <option value="male">Dschang</option>
+              <option value="female">Douala</option>
+              <option value="male">Dizangue</option>
+              <option value="female">Eyumojok</option>
+              <option value="female">Edea</option>
+              <option value="male">Foumban</option>
+              <option value="male">Fundong</option>
+              <option value="female">Garoua-Mboulai</option>
+              <option value="male">Guider</option>
+              <option value="female">Goura</option>
+              <option value="male">Garoua</option>
+              <option value="male">Kumba</option>
+              <option value="female">Loum</option>
+              <option value="male">Limbe</option>
+              <option value="female">Mbanga</option>
+              <option value="male">Mbouda</option>
+              <option value="female">Maroua</option>
+              <option value="male">Mutengene</option>
+              <option value="male">Manjo</option>
+              <option value="female">Mbengwi</option>
+              <option value="male">Mbandjock</option>
+              <option value="female">Ndu</option>
+              <option value="male">Nkambe</option>
+              <option value="male">Nso</option>
+              <option value="male">Nkongsamba</option>
+              <option value="female">Sa'a</option>
+              <option value="male">Santchou</option>
+              <option value="female">Santa</option>
+              <option value="male">Tibati</option>
+              <option value="male">Wum</option>
+              <option value="female">Yokadouma</option>
+              <option value="male">Yaounde</option>
+              <option value="female">Other</option>
+          </select></p>
+            <label for="ci">If you selected other, Enter city</label>
+            <p><input type="text" name="city" id="ci"></p>
+            <label for="led">Level of Education</label>
+            <p> <select name="led" id="led" oninput="this.className=''">
+              <option value="male">Form 4</option>
+              <option value="male">Form 5</option>
+              <option value="male">Lowersixth</option>
+              <option value="male">Uppersixth</option>
+          </select></p>
+        </div>
+
+        <div class="tab">
+          <h1 class="heading">Parent information</h1>
+        <label for="firstname">Name of parent</label>
+          <p><input type="text" name="firstname" id="firstname" oninput="this.className = ''"></p>
+          <label for="lastname">Phone number</label>
+          <p><input type="text" name="lastname" id="lastname" oninput="this.className = ''"></p>
+          <label for="email-parent">Email</label>
+          <p><input type="email" name="email" id="email-parent"  oninput="this.className = ''"></p>
+          <label for="family_unit">Which best describes your family unit?</label>
+          <p> <select name="family_unit" id="family_unit" oninput="this.className=''">
+            <option value="Monogamy">Monogamy</option>
+            <option value="Polygamous">Polygamous(More than one wife)</option>
+        </select></p>
+        
+        </div>
+
+        <div class="tab">
+          <h1 class="heading">Financial information</h1>
+          <label for="live">How many of you live at home?</label>
+          <p> <select name="live" id="live" oninput="this.className=''">
+            <option value="1-3">1-3</option>
+            <option value="4-6">4-6</option>
+            <option value="7+">7+</option>
+        </select></p>
+           <label for="incomeid">What are your parents annual income?</label>
+          <p><select name="incomeid" id="incomeid" oninput="this.className=''">
+            <option value="income">less than 200,000</option>
+            <option value="income">200,000-500,000xaf</option>
+            <option value="income">500,000xaf</option>
+        </select></p>
+          <label for="status">What are your parent's or guidance status of employment?</label>
+          <p><select name="status" id="status" oninput="this.className=''">
+            <option value="income">1 parent employed</option>
+            <option value="income">Both parents employed</option>
+            <option value="income">Both parents unemployed</option>
+            <option value="income">Informal employment of one parent</option>
+            <option value="income">Informal employment of both parent</option>
+        </select></p>
+          
+        
+        </div>
+        
+       
+        
+        <div class="tab">
+          <h1 class="heading">Urega Essays</h1>
+          <p>Please choose one of the following essays and answer on the next page</p>
+          <p><input type="radio" id="essay1" name="essay" oninput="this.className = ''"></p>
+          <label for="essay1">Share a personal story about overcoming challenges and how it has shaped your education journey.</label><br>
+          <p><input type="radio" id="essay2" name="essay" oninput="this.className = ''"></p>
+          <label for="essay2">Discuss a significant community service or volunteer experience and its impact on your perspective.</label><br>
+          <p><input type="radio" id="essay3" name="essay" oninput="this.className = ''"></p>
+          <label for="essay3">Outline your future goals and how you plan to use your education to make a positive impact on your society.</label><br>
+         
+        </div>
+
+        <div class="tab">
+          <h1 class="heading">Share a personal story about overcoming challenges and how it has shaped your educational journey.</h1>
+          <p>Please answer between 500 and 800 words.</p>
+          <p> <textarea id="textArea" placeholder="Start writing..." minlength="50" maxlength="2000"></textarea>
+            </p>
+            <div id="wordCount">Word Count: 0</div>
+          
+         
+        </div>
+
+        <div class="tab">
+          <h1 class="heading">Submissions</h1>
+          <p>Please upload the following documents, in the case where you cant find them, contact <a href="#">Support</a></p>
+          <label for="file1">Transcripts (Report cards as one pdf)</label>
+          <p><input type="file" id="file1" name="file" oninput="this.className = ''"></p>
+          <label for="file2">Parent's payslips</label>
+          <p><input type="file" id="file2" name="file2" oninput="this.className = ''"></p>
+          <label for="file3">Recommendation</label>
+          <p><input type="file" id="file3" name="file3" oninput="this.className = ''"></p>
+          <label for="file5">School fee receipt</label>
+          <p><input type="file" id="file5" name="file5" oninput="this.className = ''"></p>
+          <label for="file4">Any other supporting documents:</label>
+          <p><input type="file" id="file4" name="file4" oninput="this.className = ''"></p>
+        </div>
+
+    
+  
+
+
+        
+        <div style="overflow:auto;">
+          <div style="float:right;">
+            <button type="button" id="prevBtn" class="white" onclick="nextPrev(-1)">Previous</button>
+            <button type="button" id="nextBtn" class="normal" onclick="nextPrev(1)">Next</button>
+          </div>
+        </div>
+
+        <!-- Add this element where you want to display the submission message -->
+
+
+        
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+        <!-- Add this element where you want to display the submission message -->
+</div>
+
+        </form>
+        <script src="form.js"></script>
+        <div id="submissionMessage" style="display: none;">
+          <p>Thanks for submitting! <i class="fas fa-check"></i></p>
+        </div>
+</body>
+</html>

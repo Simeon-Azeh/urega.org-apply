@@ -1,0 +1,270 @@
+:root {
+    --primary-color: #000026;
+}
+
+::before, 
+::after {
+    box-sizing: border-box;
+}
+* {
+    font-family: 'Cardo', serif;
+}
+
+body {
+    margin: 20px;
+    background-color: #f4f6fc;
+    
+    box-sizing: border-box;
+}
+form {
+    margin-top: 40px;
+}
+.section-p1 {
+    padding: 20px 80px;
+}
+#header {
+    display: flex;
+    padding: -40px 20px;
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.05);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+#header .logo {
+    max-width: 100%;
+    height: 150px;
+}
+#hero {
+    background-color: #f4f6fc;
+    margin-top: 180px;
+    position: fixed;
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+#hero .float-1 {
+  max-width: 100%;
+  height: 450px;
+    float: right;
+   margin-top: -310px;
+   margin-right: 250px;
+}
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    padding-right: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;  
+    transition: all 0.3s ease;
+}
+input:focus {
+    outline: none;
+    border: 1px solid #f4f6fc;
+}
+
+.width-50 {
+    width: 50%;
+}
+.ml-auto {
+    margin-left: 180px;
+}
+.text-center {
+    text-align: center;
+}
+.normal {
+    padding: 10px 25px;
+    background: #000026;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+.white {
+    padding: 10px 25px;
+    background: transparent;
+    color: #000026;
+    border: 1px solid #000026;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.normal:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);;
+
+}
+.white:hover {
+    background: #000026;
+    color: #fff;
+}
+.form {
+    position: relative;
+    margin-top: 250px;
+    background-color: #fff;
+    max-width: 350px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 0.35rem;
+    padding: 2rem;
+    padding-right: 4rem;
+    padding-bottom: 20px;
+}
+
+.input-group {
+    margin: 1.5rem 0;
+}
+.btns-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.input-group select {
+    width: 370px;
+    padding: 0.5rem;
+    padding-right: 0.6rem;
+   border: none;
+   border-bottom: 1px solid #ccc;
+}
+.input-group select:focus {
+    outline: none;
+}
+
+
+.btn {
+    padding: 0.75rem;
+    margin-bottom: 20px;
+    display: block;
+    text-decoration: none;
+    background-color:var(--primary-color) ;
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+}
+.input-group div input[type="radio"] {
+    margin-right: 0.5rem;
+}
+.form .radio-b {
+    display: inline-block;
+}
+.form textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+}
+.form textarea:focus {
+    outline: none;
+}
+#wordCount {
+    margin-top: 10px;
+}
+
+.exceeded {
+    color: tomato;
+}
+.fa-arrow-right {
+    margin-left: 5px;
+    font-size: 14px;
+}
+.fa-arrow-left {
+    margin-right: 5px;
+}
+.fa-circle-check {
+    margin-left: 5px;
+}
+.fa-users,
+.fa-house{
+    margin-left: 5px;
+}
+.main-icon {
+    font-size: 60px;
+    color: rgb(28, 229, 28);
+    opacity: 0.8;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 799px) {
+    #hero h2 {
+        font-size: 21px;
+        text-align: center;
+        margin-right: 120px;
+        margin-top: 150px;
+     }
+     #hero .float-1 {
+        max-width: 100%;
+        height: 350px;
+        float: right;
+        margin-top: -410px;
+        margin-bottom: 150px;
+        margin-right: 80px;
+    }
+}
+@media (max-width: 477px) {
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-p1 {
+    padding: 20px 60px;
+}
+   #hero h2 {
+       font-size: 21px;
+       text-align: center;
+       margin-right: 120px;
+       margin-top: 150px;
+    }
+    #hero .float-1 {
+        max-width: 100%;
+        height: 350px;
+        float: right;
+        margin-top: -530px;
+        margin-bottom: -250px;
+        margin-right: 80px;
+    }
+    #hero p {
+       font-size: 12px;
+      text-wrap: wrap;
+      text-align: justify;
+       margin-right: 100px;
+       margin-top: 10px;
+       margin-bottom: 20px;
+
+    }
+    #hero .buts {
+        margin-right: 120px;
+    }
+    .input-group select {
+        width: 270px;
+    }
+    .width-50 {
+      margin-left: 130px;
+    }
+}
