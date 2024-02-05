@@ -747,23 +747,9 @@ footer .copyright {
     width: 90%;
     margin-top: 0px;
 }
-.section-p1 {
-    padding: 0px 60px;
-}
 
 
-footer .logo img {
-    margin-left: 16px;
-    width: 70%;
-    height: 70%;
 
-}
-
-/* footer */
-footer .container {
-   flex-direction: column;
-   text-align: center;
-}
 .hero_content .subscribe-btn {
   margin-bottom: 40px;
 }
@@ -771,9 +757,7 @@ footer .container {
 
 @media screen and (max-width: 499px) {
 
-    .continue-application {
-        display: none;
-    } 
+   
     .hero-btn2 {
       right: 20%;
       bottom: -40px;

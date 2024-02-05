@@ -40,7 +40,7 @@
     ...revealOptions,
     origin: "right",
   });
-  ScrollReveal().reveal("footer .logo", { delay: 300, origin: "bottom" });
+ 
   ScrollReveal().reveal(
     ".main_links, .optional_links, .first_blog, .professional_list ul",
     { delay: 500, origin: "left" }
@@ -51,7 +51,7 @@
     origin: "left",
   });
   
-  ScrollReveal().reveal(".follow i", { delay: 700, origin: "left" });
+
   
   // Add more as needed, replacing the selectors and adjusting the options
   
